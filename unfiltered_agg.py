@@ -16,14 +16,16 @@ ratedf["Euro"] = ratedf["EUR"]
 ratedf["Eur"] = ratedf["EUR"]
 ratedf["CDN"] = ratedf["CAD"]
 ratedf["usd"] = ratedf["USD"]
-ratedf["GHS"] = ratedf["GHC"]
+ratedf["GHC"] = ratedf["GHS"]
 ratedf["ZMK"] = ratedf["ZMW"]
+ratedf["USS"] = ratedf["USD"]
+ratedf["USN"] = ratedf["USD"]
 
 
 # Used for ambiguously structed arrays resulting from XML queries. If an array has any entries, take the first one.
 def default_first(array):
     # If an array isn't empty, give us the first element
-    return array[0] if array is not None and len(array)>0 else None
+    return array[0] if array is not None and len(array) > 0 else None
 
 
 # Used for ambiguous result default replacement. If value doesn't exist, replace it with the default.
@@ -201,12 +203,12 @@ class IatiFlat(object):
                                             pdb.set_trace()
                                         # ["year","transaction_type","usd_disbursement","budget_or_transaction","budget_type","iati_identifier"]
                                         row = [year, transaction_type_code, converted_value, b_or_t, budget_type, iati_identifier]
-                                        meta = {"row":row, "time_range":time_range, "budget_type":budget_type}
+                                        meta = {"row": row, "time_range": time_range, "budget_type": budget_type}
                                         budget_output.append(meta)
                     if len(budget_output) > 1:
                         overlaps = []
                         spoiled = False
-                        keep_indexes = range(0, len(budget_output))
+                        keep_indexes = list(range(0, len(budget_output)))
                         # All possible combinations of 2
                         for i in range(0, len(budget_output)):
                             if i+1 < len(budget_output):

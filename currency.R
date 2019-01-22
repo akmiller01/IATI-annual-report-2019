@@ -41,5 +41,13 @@ for(this.cc in unique(wdat$cc)){
 xbt_list = list("2015"=230.54)
 ex_list[["XBT"]] = xbt_list
 
+# XDR
+xdr = fread("xdr.csv")
+xdr_list = list()
+for(i in 1:nrow(xdr)){
+  xdr_list[as.character(xdr[i,"year"])] = xdr[i,"XDR"]
+}
+ex_list[["XDR"]] = xdr_list
+
 ex_json  = toJSON(ex_list, auto_unbox=T)
 write(ex_json,"ex_rates.json")

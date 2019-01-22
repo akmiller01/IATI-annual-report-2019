@@ -14,8 +14,10 @@ ratedf["Euro"] = ratedf["EUR"]
 ratedf["Eur"] = ratedf["EUR"]
 ratedf["CDN"] = ratedf["CAD"]
 ratedf["usd"] = ratedf["USD"]
-ratedf["GHS"] = ratedf["GHC"]
+ratedf["GHC"] = ratedf["GHS"]
 ratedf["ZMK"] = ratedf["ZMW"]
+ratedf["USS"] = ratedf["USD"]
+ratedf["USN"] = ratedf["USD"]
 
 
 # Used for ambiguously structed arrays resulting from XML queries. If an array has any entries, take the first one.
