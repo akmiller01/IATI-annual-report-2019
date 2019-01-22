@@ -56,7 +56,7 @@ def convert_usd(value, year, currency, ratedf):
     elif value is None or year is None or currency is None:
         return None
     try:
-        conversion_factor = ratedf[currency][year]
+        conversion_factor = ratedf[currency][str(year)]
         if conversion_factor > 0:
             return value*conversion_factor
         else:
