@@ -1,7 +1,7 @@
 library(data.table)
 library(readr)
 
-wd = "/home/alex/git/IATI-annual-report-2020/output/"
+wd = "/home/alex/git/IATI-annual-report-2019/output/"
 setwd(wd)
 
 agg <- fread("iati_unfiltered_agg.csv")
