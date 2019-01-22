@@ -1,7 +1,7 @@
 library(data.table)
 library(readr)
 
-wd = "/home/alex/git/IATI-annual-report-2019/output/"
+wd = "/home/alex/git/IATI-annual-report-2020/output/"
 setwd(wd)
 
 agg <- fread("iati_unfiltered_agg.csv")
@@ -10,12 +10,12 @@ dagg <- fread("iati_unfiltered_disagg.csv")
 transactions.aggregate <- subset(agg,budget_or_transaction=="Transaction")
 budgets.aggregate <- subset(agg,budget_or_transaction=="Budget")
 
-transactions.aggregate.2017 <- subset(transactions.aggregate,year==2017)
-trans.2017.tab <- data.table(transactions.aggregate.2017)[,.(value=sum(usd_disbursement,na.rm=TRUE)),by=.(publisher,year)]
+transactions.aggregate.2018 <- subset(transactions.aggregate,year==2018)
+trans.2018.tab <- data.table(transactions.aggregate.2018)[,.(value=sum(usd_disbursement,na.rm=TRUE)),by=.(publisher,year)]
 
-budgets.aggregate.17.18.19 <- subset(budgets.aggregate,year %in% c(2017,2018,2019))
+budgets.aggregate.18.19.20 <- subset(budgets.aggregate,year %in% c(2018,2019,2020))
 
-bud.17.18.19.tab <- data.table(budgets.aggregate.17.18.19)[,.(value=sum(usd_disbursement,na.rm=TRUE)),by=.(publisher,year)]
+bud.18.19.20.tab <- data.table(budgets.aggregate.18.19.20)[,.(value=sum(usd_disbursement,na.rm=TRUE)),by=.(publisher,year)]
 
 iati_members <- c(
   "Ghana"
@@ -178,17 +178,17 @@ recode_iati_members <- function(x){
 }
 
 transactions.disaggregate <- subset(dagg,budget_or_transaction=="Transaction")
-transactions.disaggregate.15.16.17 <- subset(transactions.disaggregate,year %in% c(2015,2016,2017))
+transactions.disaggregate.16.17.18 <- subset(transactions.disaggregate,year %in% c(2016,2017,2018))
 
-transactions.disaggregate.15.16.17$recipient_code <- toupper(transactions.disaggregate.15.16.17$recipient_code)
-transactions.disaggregate.15.16.17 <- subset(transactions.disaggregate.15.16.17,recipient_code %in% iati_member_codes)
-transactions.disaggregate.15.16.17$recipient <- sapply(transactions.disaggregate.15.16.17$recipient_code,recode_iati_members)
+transactions.disaggregate.16.17.18$recipient_code <- toupper(transactions.disaggregate.16.17.18$recipient_code)
+transactions.disaggregate.16.17.18 <- subset(transactions.disaggregate.16.17.18,recipient_code %in% iati_member_codes)
+transactions.disaggregate.16.17.18$recipient <- sapply(transactions.disaggregate.16.17.18$recipient_code,recode_iati_members)
 
-transactions.disaggregate.15.16.17$publisher[which(transactions.disaggregate.15.16.17$publisher=="usaid")] = "unitedstates"
-transactions.disaggregate.15.16.17$publisher[which(transactions.disaggregate.15.16.17$publisher=="ec-echo")] = "ec-devco"
-transactions.disaggregate.15.16.17$publisher[which(transactions.disaggregate.15.16.17$publisher=="ec-near")] = "ec-devco"
+transactions.disaggregate.16.17.18$publisher[which(transactions.disaggregate.16.17.18$publisher=="usaid")] = "unitedstates"
+transactions.disaggregate.16.17.18$publisher[which(transactions.disaggregate.16.17.18$publisher=="ec-echo")] = "ec-devco"
+transactions.disaggregate.16.17.18$publisher[which(transactions.disaggregate.16.17.18$publisher=="ec-near")] = "ec-devco"
 
-trans.recip.donor.tab <- data.table(transactions.disaggregate.15.16.17)[,.(value=sum(usd_disbursement,na.rm=TRUE)),by=.(recipient,publisher,year)]
+trans.recip.donor.tab <- data.table(transactions.disaggregate.16.17.18)[,.(value=sum(usd_disbursement,na.rm=TRUE)),by=.(recipient,publisher,year)]
 
 trans.recip.max <- trans.recip.donor.tab[,.(value=max(value)),by=.(recipient,publisher)]
 
@@ -297,11 +297,11 @@ joint.top10$publishing.to.iati <- as.numeric(!is.na(joint.top10$iati.value))
 joint.top10$donor.or.publisher <- joint.top10$donor
 joint.top10$donor.or.publisher[which(is.na(joint.top10$donor.or.publisher))] <- joint.top10$publisher[which(is.na(joint.top10$donor.or.publisher))]
 
-write.csv(transactions.aggregate.2017,"transactions_2017.csv",na="",row.names=FALSE)
-write.csv(trans.2017.tab,"transactions_2017_by_publisher.csv",na="",row.names=FALSE)
-write.csv(budgets.aggregate.17.18.19,"budgets_171819.csv",na="",row.names=FALSE)
-write.csv(bud.17.18.19.tab,"budgets_171819_by_publisher.csv",na="",row.names=FALSE)
-write.csv(transactions.disaggregate.15.16.17,"transactions_151617_disaggregated.csv",na="",row.names=FALSE)
+write.csv(transactions.aggregate.2018,"transactions_2018.csv",na="",row.names=FALSE)
+write.csv(trans.2018.tab,"transactions_2018_by_publisher.csv",na="",row.names=FALSE)
+write.csv(budgets.aggregate.18.19.20,"budgets_181920.csv",na="",row.names=FALSE)
+write.csv(bud.18.19.20.tab,"budgets_181920_by_publisher.csv",na="",row.names=FALSE)
+write.csv(transactions.disaggregate.16.17.18,"transactions_161718_disaggregated.csv",na="",row.names=FALSE)
 write.csv(trans.recip.top10,"transactions_by_recipient.csv",na="",row.names=FALSE)
 write.csv(crs.top10,"crs_by_recipient.csv",na="",row.names=FALSE)
 write.csv(joint.top10,"merged_by_recipient.csv",na="",row.names=FALSE)
