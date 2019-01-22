@@ -1,5 +1,7 @@
-library(data.table)
-library(readr)
+list.of.packages <- c("data.table")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+lapply(list.of.packages, require, character.only=T)
 
 wd = "/home/alex/git/IATI-annual-report-2019/output/"
 setwd(wd)
@@ -48,7 +50,7 @@ iati_members <- c(
   ,"Syrian Arab Republic"
   ,"Yemen"
   ,"Papua New Guinea"
-  ,"São Tomé and Príncipe"
+  ,"Sao Tome and Principe"
 )
 
 iati_member_codes <- c(
@@ -201,17 +203,18 @@ trans.recip.max <- merge(trans.recip.max,trans.recip.donor.tab,all.x=TRUE)
 setnames(trans.recip.max,"year","iati.year")
 setnames(trans.recip.max,"value","iati.value")
 
-exclude <- c("abt","akfuk73","dec-uk","palladium","plan_usa","spuk","wwf-uk")
+# exclude <- c("abt","akfuk73","dec-uk","palladium","plan_usa","spuk","wwf-uk")
+exclude = c()
 trans.recip.max <- subset(trans.recip.max,!(publisher %in% exclude))
 
 crs <- fread("crs.csv")
 
 crs <- subset(crs,recipient_name %in% iati_members)
-crs$value <- crs$value*1000000
+crs$value <- crs$usd_disbursement*1000000
 setnames(crs,"recipient_name","recipient")
 setnames(crs,"donor_name","donor")
 keep <- c("recipient","donor","year","value")
-crs <- crs[keep]
+crs <- crs[,keep,with=F]
 
 vague_donors <- c(
   "All Donors, Total"
@@ -236,6 +239,7 @@ vague_donors <- c(
   )
 
 crs <- subset(crs,!donor %in% vague_donors)
+crs = crs[,.(value=sum(value,na.rm=T)),by=.(recipient,donor,year)]
 
 crs <- crs[order(crs$recipient,-crs$value),]
 crs.top10 <- data.table(crs)[,head(.SD,10),by="recipient"]
