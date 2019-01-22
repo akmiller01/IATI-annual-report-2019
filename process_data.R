@@ -1,13 +1,11 @@
 library(data.table)
 library(readr)
 
-wd = "/media/alex/Windows/Users/Alex/Documents/Data/IATI/"
+wd = "/home/alex/git/IATI-annual-report-2019/output/"
 setwd(wd)
 
-# setwd("C:/Users/Alex/Documents/Data/IATI/")
-
-agg <- read_csv("iati_unfiltered_agg.csv")
-dagg <- read_csv("iati_unfiltered_disagg.csv")
+agg <- fread("iati_unfiltered_agg.csv")
+dagg <- fread("iati_unfiltered_disagg.csv")
 
 transactions.aggregate <- subset(agg,budget_or_transaction=="Transaction")
 budgets.aggregate <- subset(agg,budget_or_transaction=="Budget")
@@ -201,14 +199,12 @@ setnames(trans.recip.max,"value","iati.value")
 exclude <- c("abt","akfuk73","dec-uk","palladium","plan_usa","spuk","wwf-uk")
 trans.recip.max <- subset(trans.recip.max,!(publisher %in% exclude))
 
-crs <- read_csv("crs.csv")
+crs <- fread("crs.csv")
 
-crs <- subset(crs,Recipient %in% iati_members)
-crs$Value <- crs$Value*1000000
-setnames(crs,"Value","value")
-setnames(crs,"Year","year")
-setnames(crs,"Recipient","recipient")
-setnames(crs,"Donor","donor")
+crs <- subset(crs,recipient_name %in% iati_members)
+crs$value <- crs$value*1000000
+setnames(crs,"recipient_name","recipient")
+setnames(crs,"donor_name","donor")
 keep <- c("recipient","donor","year","value")
 crs <- crs[keep]
 
