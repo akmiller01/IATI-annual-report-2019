@@ -111,7 +111,7 @@ class IatiFlat(object):
             defaults = {}
             default_tags = ["default-currency"]
             for tag in default_tags:
-                if tag in activity.attrib.keys():
+                if tag in list(activity.attrib.keys()):
                     defaults[tag] = activity.attrib[tag]
                 elif tag in child_tags:
                     defaults[tag] = default_first(activity.xpath("{}/@code".format(tag)))
@@ -128,7 +128,7 @@ class IatiFlat(object):
             activity_recipients = {}
             for recipient_country in recipient_countries:
                 attribs = recipient_country.attrib
-                attrib_keys = attribs.keys()
+                attrib_keys = list(attribs.keys())
                 percentage = attribs['percentage'] if 'percentage' in attrib_keys else None
                 if percentage is not None:
                     percentage = percentage.replace("%", "")
@@ -140,7 +140,7 @@ class IatiFlat(object):
             recipient_regions = activity.findall("recipient-region")
             for recipient_region in recipient_regions:
                 attribs = recipient_region.attrib
-                attrib_keys = attribs.keys()
+                attrib_keys = list(attribs.keys())
                 percentage = attribs['percentage'] if 'percentage' in attrib_keys else None
                 if percentage is not None:
                     percentage = percentage.replace("%", "")
@@ -156,8 +156,8 @@ class IatiFlat(object):
                 activity_recipients[activity_recipient_code] = (activity_recipients[activity_recipient_code] / activity_recipient_percentage) if (activity_recipients[activity_recipient_code]) is not None else None
 
             # If there's only one recipient, it's percent is implied to be 100
-            if len(activity_recipients.keys()) == 1:
-                activity_recipients[activity_recipients.keys()[0]] = 1
+            if len(list(activity_recipients.keys())) == 1:
+                activity_recipients[list(activity_recipients.keys())[0]] = 1
 
             if secondary_reporter == "0":
                 has_transactions = "transaction" in child_tags
@@ -186,7 +186,7 @@ class IatiFlat(object):
                                     transaction_recipients[recipient_code] = value
 
                     # If we turned up valid recipients, don't use the activity-level ones
-                    use_activity_recipients = len(transaction_recipients.keys()) == 0
+                    use_activity_recipients = len(list(transaction_recipients.keys())) == 0
 
                     # Calc the sum of non-negative recips
                     transaction_recipient_value_sum = 0.0
@@ -197,8 +197,8 @@ class IatiFlat(object):
                             transaction_recipients[recipient_code] = transaction_recipients[recipient_code]/transaction_recipient_value_sum
 
                     # If there's only one recipient, it's percent is implied to be 100
-                    if len(transaction_recipients.keys()) == 1:
-                        transaction_recipients[transaction_recipients.keys()[0]] = 1
+                    if len(list(transaction_recipients.keys())) == 1:
+                        transaction_recipients[list(transaction_recipients.keys())[0]] = 1
 
                     for transaction in transactions:
                         transaction_type_code = default_first(transaction.xpath("transaction-type/@code"))
@@ -231,7 +231,7 @@ class IatiFlat(object):
                             b_or_t = "Transaction"
 
                             if value and use_activity_recipients:
-                                for activity_recipient_code in activity_recipients.keys():
+                                for activity_recipient_code in list(activity_recipients.keys()):
                                     activity_recipient_percentage = activity_recipients[activity_recipient_code]
                                     calculated_value = value*activity_recipient_percentage if (activity_recipient_percentage is not None) else None
                                     if currency in self.dictionaries["ratedf"]:
@@ -256,7 +256,7 @@ class IatiFlat(object):
                         budgets = activity.findall("budget")
                         for budget in budgets:
                             transaction_type_code = None
-                            if "type" in budget.attrib.keys():
+                            if "type" in list(budget.attrib.keys()):
                                 budget_type = budget.attrib["type"]
                             else:
                                 budget_type = None
@@ -282,7 +282,7 @@ class IatiFlat(object):
                             b_or_t = "Budget"
 
                             if value and use_activity_recipients:
-                                for activity_recipient_code in activity_recipients.keys():
+                                for activity_recipient_code in list(activity_recipients.keys()):
                                     activity_recipient_percentage = activity_recipients[activity_recipient_code]
                                     calculated_value = value*activity_recipient_percentage if (activity_recipient_percentage is not None) else None
                                     if currency in self.dictionaries["ratedf"]:
@@ -293,7 +293,7 @@ class IatiFlat(object):
                                     row = [year, activity_recipient_code, transaction_type_code, converted_value, value, currency, b_or_t, budget_type, iati_identifier]
                                     output.append(row)
                             elif value and not use_activity_recipients:
-                                for transaction_recipient_code in transaction_recipients.keys():
+                                for transaction_recipient_code in list(transaction_recipients.keys()):
                                     transaction_recipient_percentage = transaction_recipients[transaction_recipient_code]
                                     calculated_value = value*transaction_recipient_percentage if (transaction_recipient_percentage is not None) else None
                                     if currency in self.dictionaries["ratedf"]:

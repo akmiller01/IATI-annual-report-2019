@@ -48,6 +48,7 @@ iati_members <- c(
   ,"Syrian Arab Republic"
   ,"Yemen"
   ,"Papua New Guinea"
+  ,"São Tomé and Príncipe"
 )
 
 iati_member_codes <- c(
@@ -171,6 +172,10 @@ iati_member_codes <- c(
   ,"PG"
   ,"PNG"
   ,"862"
+  # São Tomé and Príncipe
+  ,"ST"
+  ,"STP"
+  ,"268"
 )
 
 recode_iati_members <- function(x){
