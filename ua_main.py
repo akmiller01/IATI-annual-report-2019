@@ -26,7 +26,7 @@ if __name__ == '__main__':
         for filename in files:
             filepath = os.path.join(subdir, filename)
             publisher = os.path.basename(subdir)
-            print filename
+            print(filename)
             try:
                 root = etree.parse(filepath).getroot()
             except etree.XMLSyntaxError:
