@@ -239,7 +239,7 @@ class IatiFlat(object):
                                     else:
                                         pdb.set_trace()
                                     # ["year","recipient_code","transaction_type","usd_disbursement","budget_or_transaction","budget_type","iati_identifier"]
-                                    row = [year, activity_recipient_code, transaction_type_code, converted_value, value, currency, b_or_t, budget_type, iati_identifier]
+                                    row = [year, activity_recipient_code, transaction_type_code, converted_value, calculated_value, currency, b_or_t, budget_type, iati_identifier]
                                     output.append(row)
                             elif value and not use_activity_recipients:
                                 if currency in self.dictionaries["ratedf"]:
@@ -247,7 +247,7 @@ class IatiFlat(object):
                                 else:
                                     pdb.set_trace()
                                 # ["year","recipient_code","transaction_type","usd_disbursement","budget_or_transaction","budget_type","iati_identifier"]
-                                row = [year, recipient_code, transaction_type_code, converted_value, value, currency, b_or_t, budget_type, iati_identifier]
+                                row = [year, recipient_code, transaction_type_code, converted_value, calculated_value, currency, b_or_t, budget_type, iati_identifier]
                                 output.append(row)
 
                     # Loop through budgets, and capture as close equivalents as we can to transactions
@@ -290,7 +290,7 @@ class IatiFlat(object):
                                     else:
                                         pdb.set_trace()
                                     # ["year","recipient_code","transaction_type","usd_disbursement","budget_or_transaction","budget_type","iati_identifier"]
-                                    row = [year, activity_recipient_code, transaction_type_code, converted_value, value, currency, b_or_t, budget_type, iati_identifier]
+                                    row = [year, activity_recipient_code, transaction_type_code, converted_value, calculated_value, currency, b_or_t, budget_type, iati_identifier]
                                     output.append(row)
                             elif value and not use_activity_recipients:
                                 for transaction_recipient_code in list(transaction_recipients.keys()):
@@ -301,7 +301,7 @@ class IatiFlat(object):
                                     else:
                                         pdb.set_trace()
                                     # ["year","recipient_code","transaction_type","usd_disbursement","budget_or_transaction","budget_type","iati_identifier"]
-                                    row = [year, transaction_recipient_code, transaction_type_code, converted_value, value, currency, b_or_t, budget_type, iati_identifier]
+                                    row = [year, transaction_recipient_code, transaction_type_code, converted_value, calculated_value, currency, b_or_t, budget_type, iati_identifier]
                                     output.append(row)
 
         return output
