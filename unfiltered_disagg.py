@@ -247,7 +247,7 @@ class IatiFlat(object):
                                 else:
                                     pdb.set_trace()
                                 # ["year","recipient_code","transaction_type","usd_disbursement","budget_or_transaction","budget_type","iati_identifier"]
-                                row = [year, recipient_code, transaction_type_code, converted_value, calculated_value, currency, b_or_t, budget_type, iati_identifier]
+                                row = [year, recipient_code, transaction_type_code, converted_value, value, currency, b_or_t, budget_type, iati_identifier]
                                 output.append(row)
 
                     # Loop through budgets, and capture as close equivalents as we can to transactions
