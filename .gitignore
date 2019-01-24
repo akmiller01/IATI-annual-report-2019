@@ -6,3 +6,4 @@ __pycache__
 output/crs.csv
 output/iati_unfiltered_agg.csv
 output/iati_unfiltered_disagg.csv
+output/output.zip

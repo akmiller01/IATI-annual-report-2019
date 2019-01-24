@@ -242,10 +242,10 @@ crs <- subset(crs,!donor %in% vague_donors)
 crs = crs[,.(value=sum(value,na.rm=T)),by=.(recipient,donor,year)]
 
 crs <- crs[order(crs$recipient,-crs$value),]
-crs.top10 <- data.table(crs)[,head(.SD,10),by="recipient"]
+crs.top15 <- data.table(crs)[,head(.SD,15),by="recipient"]
 
 trans.recip.max <- trans.recip.max[order(trans.recip.max$recipient,-trans.recip.max$iati.value),]
-trans.recip.top10 <- trans.recip.max[,head(.SD,10),by="recipient"]
+trans.recip.top15 <- trans.recip.max[,head(.SD,15),by="recipient"]
 
 publisher.dict <- c(
   "worldbank"="World Bank Group, Total"    
@@ -301,16 +301,16 @@ joint.donors$value <- pmax(joint.donors$crs.value,joint.donors$iati.value,na.rm=
 joint.donors <- joint.donors[order(joint.donors$recipient,-joint.donors$value),]
 
 joint.donors <- joint.donors[order(joint.donors$recipient,-joint.donors$value),]
-joint.top10 <- data.table(joint.donors)[,head(.SD,10),by="recipient"]
-joint.top10$publishing.to.iati <- as.numeric(!is.na(joint.top10$iati.value))
-joint.top10$donor.or.publisher <- joint.top10$donor
-joint.top10$donor.or.publisher[which(is.na(joint.top10$donor.or.publisher))] <- joint.top10$publisher[which(is.na(joint.top10$donor.or.publisher))]
+joint.top15 <- data.table(joint.donors)[,head(.SD,15),by="recipient"]
+joint.top15$publishing.to.iati <- as.numeric(!is.na(joint.top15$iati.value))
+joint.top15$donor.or.publisher <- joint.top15$donor
+joint.top15$donor.or.publisher[which(is.na(joint.top15$donor.or.publisher))] <- joint.top15$publisher[which(is.na(joint.top15$donor.or.publisher))]
 
 write.csv(transactions.aggregate.2018,"transactions_2018.csv",na="",row.names=FALSE)
 write.csv(trans.2018.tab,"transactions_2018_by_publisher.csv",na="",row.names=FALSE)
 write.csv(budgets.aggregate.18.19.20,"budgets_181920.csv",na="",row.names=FALSE)
 write.csv(bud.18.19.20.tab,"budgets_181920_by_publisher.csv",na="",row.names=FALSE)
 write.csv(transactions.disaggregate.16.17.18,"transactions_161718_disaggregated.csv",na="",row.names=FALSE)
-write.csv(trans.recip.top10,"transactions_by_recipient.csv",na="",row.names=FALSE)
-write.csv(crs.top10,"crs_by_recipient.csv",na="",row.names=FALSE)
-write.csv(joint.top10,"merged_by_recipient.csv",na="",row.names=FALSE)
+write.csv(trans.recip.top15,"transactions_by_recipient.csv",na="",row.names=FALSE)
+write.csv(crs.top15,"crs_by_recipient.csv",na="",row.names=FALSE)
+write.csv(joint.top15,"merged_by_recipient.csv",na="",row.names=FALSE)

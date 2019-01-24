@@ -9,6 +9,11 @@
 "Bangladesh","ausgov",78672244.7799,2018
 "Bangladesh","gavi",76645188,2017
 "Bangladesh","fao",61085956.25,2016
+"Bangladesh","gac-amc",57825573.8004102,2018
+"Bangladesh","bmz",57407411.570652,2016
+"Bangladesh","sida",50169839.915733,2018
+"Bangladesh","minbuza_nl",49714797.198,2017
+"Bangladesh","unhcr",49606775.32,2017
 "Benin","worldbank",116989349,2016
 "Benin","unitedstates",113060495.27,2017
 "Benin","ec-devco",82923987.09722,2018
@@ -19,6 +24,11 @@
 "Benin","afd",20449200.549492,2017
 "Benin","be-dgd",19013826.20098,2018
 "Benin","sdc_ch",17715342.663,2017
+"Benin","gavi",14659963,2018
+"Benin","undp",12412004,2018
+"Benin","gac-amc",12046892.2434961,2018
+"Benin","who",8835575.18,2017
+"Benin","mefbenin",7206546.8286,2018
 "Burkina Faso","worldbank",268032926,2016
 "Burkina Faso","ec-devco",238966919.462885,2018
 "Burkina Faso","theglobalfund",140029039,2016
@@ -29,6 +39,11 @@
 "Burkina Faso","fao",41501700.66,2016
 "Burkina Faso","gac-amc",39643080.6200261,2018
 "Burkina Faso","bmz",38970866.018436,2016
+"Burkina Faso","gavi",27264950,2016
+"Burkina Faso","sida",27130586.247787,2018
+"Burkina Faso","afdb",20234750.741298,2017
+"Burkina Faso","sdc_ch",18820370.5342,2018
+"Burkina Faso","bmgf",17168039.7996945,2017
 "Burundi","unitedstates",61803616.98,2017
 "Burundi","ec-devco",50813860.284066,2016
 "Burundi","wfp",38501477,2018
@@ -39,6 +54,11 @@
 "Burundi","gavi",29066595,2018
 "Burundi","fao",23711988.13,2016
 "Burundi","undp",21700310,2018
+"Burundi","unpf",20876481.8152,2016
+"Burundi","unhcr",19602502.63,2017
+"Burundi","ifad",17769150.735301,2017
+"Burundi","ofid",16353979.54,2016
+"Burundi","cerf",12985955,2016
 "Colombia","wwf-uk",1736324130.5872,2016
 "Colombia","worldbank",1532502377,2016
 "Colombia","iadb",1084527003,2016
@@ -49,6 +69,11 @@
 "Colombia","bmz",40082879.997396,2017
 "Colombia","gac-amc",35725644.8288835,2017
 "Colombia","wfp",34988664,2018
+"Colombia","sida",33653105.277854,2017
+"Colombia","icrc",29030205.178275,2017
+"Colombia","fco",25534111.6687978,2018
+"Colombia","fao",22660107.58,2018
+"Colombia","unpf",21031127.9622,2016
 "Congo","afd",41747345.865636,2017
 "Congo","worldbank",35485884,2018
 "Congo","ec-devco",21324064.11242,2018
@@ -59,6 +84,11 @@
 "Congo","unitedstates",4751237.17,2018
 "Congo","cerf",4371548,2017
 "Congo","gavi",4352138,2016
+"Congo","undp",3906369,2016
+"Congo","irishaid",3387600,2017
+"Congo","afdb",2990564.371975,2016
+"Congo","ofid",2495882.08,2016
+"Congo","bmgf",2417604.32794463,2018
 "Democratic Republic of the Congo","unitedstates",409247578.4,2017
 "Democratic Republic of the Congo","worldbank",267478896,2017
 "Democratic Republic of the Congo","wfp",244940811,2018
@@ -69,6 +99,11 @@
 "Democratic Republic of the Congo","unhcr",88617526,2017
 "Democratic Republic of the Congo","undp",85606701,2018
 "Democratic Republic of the Congo","who",81721794.4,2017
+"Democratic Republic of the Congo","bmz",78929872.14974,2018
+"Democratic Republic of the Congo","sida",77679374.027116,2018
+"Democratic Republic of the Congo","be-dgd",74143233.614998,2018
+"Democratic Republic of the Congo","icrc",67828187.218305,2017
+"Democratic Republic of the Congo","unocha-cbpf",62997707.63,2018
 "Dominican Republic","iadb",400901965,2016
 "Dominican Republic","unitedstates",67394044.13,2016
 "Dominican Republic","afd",63138287.2831989,2016
@@ -79,6 +114,11 @@
 "Dominican Republic","ifad",8397915.641208,2017
 "Dominican Republic","theglobalfund",5502585,2016
 "Dominican Republic","bmz",3465553.81432,2018
+"Dominican Republic","wvi",2389128,2017
+"Dominican Republic","ec-fpi",2335543.4828,2016
+"Dominican Republic","ifrcrcs",1904377.75182,2017
+"Dominican Republic","who",1866312.79,2017
+"Dominican Republic","fao",1721029.19,2016
 "Ghana","worldbank",358280418,2017
 "Ghana","unitedstates",216697355.83,2016
 "Ghana","theglobalfund",92232138,2017
@@ -89,6 +129,11 @@
 "Ghana","danida",50460336.20846,2016
 "Ghana","bmz",41754721.585488,2017
 "Ghana","gavi",31128719,2018
+"Ghana","minbuza_nl",30662980.8012,2016
+"Ghana","afd",25775612.583776,2016
+"Ghana","bmgf",16252656.0272068,2016
+"Ghana","undp",12080255,2016
+"Ghana","gecfundmanagerpwc",10502281.9212,2018
 "Guinea","ec-devco",115005005.50524,2018
 "Guinea","theglobalfund",108048941,2016
 "Guinea","unitedstates",107891412.43,2016
@@ -99,6 +144,11 @@
 "Guinea","wfp",17333942,2016
 "Guinea","gavi",13171014,2017
 "Guinea","unpf",11514629.8981,2016
+"Guinea","afdb",11465933.702235,2017
+"Guinea","afd",8631455.214876,2017
+"Guinea","be-dgd",8335841.324,2018
+"Guinea","fao",7536808.56,2016
+"Guinea","ofid",5970468.4,2017
 "Honduras","iadb",299509233,2018
 "Honduras","unitedstates",130698570.96,2017
 "Honduras","ec-devco",61098051.18054,2018
@@ -109,6 +159,11 @@
 "Honduras","bmz",20291646.361756,2016
 "Honduras","gac-amc",18599871.0417668,2018
 "Honduras","undp",17957235,2017
+"Honduras","sdc_ch",12756435.1738,2018
+"Honduras","theglobalfund",12715363,2016
+"Honduras","ofid",10739967.4,2017
+"Honduras","fomin",6591643,2018
+"Honduras","wvi",5233228,2017
 "Indonesia","asdb",1749739133.7,2018
 "Indonesia","worldbank",1610379963,2016
 "Indonesia","ausgov",344449979.3169,2018
@@ -119,6 +174,11 @@
 "Indonesia","gavi",35290409,2017
 "Indonesia","fao",34832628.62,2016
 "Indonesia","bmz",33131386.989828,2017
+"Indonesia","undp",25373238,2018
+"Indonesia","who",23120218.64,2017
+"Indonesia","minbuza_nl",21689900.0208,2016
+"Indonesia","gac-amc",20130636.6343136,2016
+"Indonesia","dfid",18576979.848,2017
 "Lebanon","unhcr",350846844.91,2016
 "Lebanon","wfp",313302352,2018
 "Lebanon","ec-devco",234535158.395754,2018
@@ -129,6 +189,11 @@
 "Lebanon","minbuza_nl",82732455.486,2018
 "Lebanon","undp",67159060,2016
 "Lebanon","norad",63280415.5308,2017
+"Lebanon","gac-amc",46878284.9720057,2017
+"Lebanon","icrc",44511022.72251,2017
+"Lebanon","aics",28827334.61056,2018
+"Lebanon","unpf",22178036.9698,2016
+"Lebanon","ausgov",21055331.4813,2018
 "Liberia","unitedstates",298355560.1,2016
 "Liberia","worldbank",105640286,2016
 "Liberia","bmz",44742845.417886,2016
@@ -139,6 +204,11 @@
 "Liberia","norad",22907551.1964,2017
 "Liberia","theglobalfund",20605129,2018
 "Liberia","wfp",16562122,2016
+"Liberia","afdb",15310888.863035,2016
+"Liberia","fao",14905249.96,2016
+"Liberia","unhcr",13643105.88,2016
+"Liberia","gavi",8345254,2017
+"Liberia","solidaridad-waf",6674759.542941,2017
 "Madagascar","worldbank",204569095,2017
 "Madagascar","unitedstates",119308400.77,2016
 "Madagascar","ec-devco",71467901.170578,2016
@@ -149,6 +219,11 @@
 "Madagascar","theglobalfund",25930535,2018
 "Madagascar","gavi",19241668,2016
 "Madagascar","afd",18859219.58492,2018
+"Madagascar","who",18364054.54,2017
+"Madagascar","unpf",17526349.4726,2016
+"Madagascar","undp",16673596,2018
+"Madagascar","eib",16028790,2018
+"Madagascar","cerf",10960423,2017
 "Malawi","unitedstates",300819065.19,2017
 "Malawi","worldbank",297503371,2017
 "Malawi","wfp",191677239,2016
@@ -159,6 +234,11 @@
 "Malawi","bmz",55180009.11624,2017
 "Malawi","unpf",48388706.7338,2016
 "Malawi","undp",45567606,2017
+"Malawi","afdb",33258489.468702,2017
+"Malawi","gavi",23603342,2018
+"Malawi","irishaid",21604165.289454,2016
+"Malawi","scuk",17072054.7536,2016
+"Malawi","ofid",16940391.54,2018
 "Mali","ec-devco",491013320.519506,2018
 "Mali","unitedstates",213154352.27,2017
 "Mali","worldbank",151957504,2017
@@ -169,6 +249,11 @@
 "Mali","minbuza_nl",49338319.902,2018
 "Mali","sida",46178590.428198,2018
 "Mali","undp",41357114,2016
+"Mali","icrc",40711264.457475,2017
+"Mali","afdb",40604286.523959,2017
+"Mali","danida",38638930.671368,2016
+"Mali","gavi",34709532,2016
+"Mali","sdc_ch",32834497.4054,2018
 "Moldova","ec-devco",107933964.959952,2017
 "Moldova","worldbank",93498878,2016
 "Moldova","unitedstates",27766065.08,2017
@@ -179,6 +264,11 @@
 "Moldova","bmz",9233092.331232,2017
 "Moldova","who",5913061.06,2017
 "Moldova","norad",4253201.967,2016
+"Moldova","ifad",4043239.996808,2017
+"Moldova","dggf_financing_local_smes",3558000,2018
+"Moldova","bmgf",2690000,2016
+"Moldova","pin",1188581.720392,2018
+"Moldova","finland_mfa",1032279.6374,2016
 "Montenegro","eib",47440000,2018
 "Montenegro","ec-devco",33121281.12692,2018
 "Montenegro","undp",9775714,2018
@@ -189,6 +279,11 @@
 "Montenegro","ifad",1779000,2018
 "Montenegro","who",951381.64,2017
 "Montenegro","unpf",861624.7554,2016
+"Montenegro","norad",858565.3322,2018
+"Montenegro","fco",857234.724968421,2017
+"Montenegro","slovakaid",583515.713,2016
+"Montenegro","unido",315176.9,2016
+"Montenegro","ilo",276343,2017
 "Myanmar","danida",247020107.6226,2016
 "Myanmar","worldbank",220548525,2017
 "Myanmar","theglobalfund",151290283,2016
@@ -199,6 +294,11 @@
 "Myanmar","bmz",49669062.77002,2018
 "Myanmar","sida",45110016.052393,2018
 "Myanmar","wfp",44432507,2018
+"Myanmar","icrc",40093696.154925,2017
+"Myanmar","who",37509582.55,2017
+"Myanmar","sdc_ch",37299150.1808,2018
+"Myanmar","asdb",34915996.94,2018
+"Myanmar","gavi",33358208,2018
 "Nepal","worldbank",477313642,2018
 "Nepal","asdb",233244684.34,2017
 "Nepal","unitedstates",186998649.97,2017
@@ -209,6 +309,11 @@
 "Nepal","theglobalfund",35306300,2016
 "Nepal","norad",32292459.3966,2017
 "Nepal","sdc_ch",30646069.743,2017
+"Nepal","wfp",27047112,2016
+"Nepal","finland_mfa",25049748.9814,2016
+"Nepal","fao",24047425.79,2016
+"Nepal","ausgov",23778431.244,2018
+"Nepal","bmz",22499287.887824,2016
 "Nigeria","worldbank",924786116,2017
 "Nigeria","unitedstates",740434036.48,2018
 "Nigeria","afdb",444647790.278745,2017
@@ -219,6 +324,11 @@
 "Nigeria","theglobalfund",194317675,2017
 "Nigeria","bmgf",154086945.908148,2017
 "Nigeria","gavi",128416104,2016
+"Nigeria","icrc",96898437.15645,2017
+"Nigeria","afd",63368430.9030646,2017
+"Nigeria","bmz",62779371.8838,2017
+"Nigeria","palladium",52587534.328,2017
+"Nigeria","gac-amc",45967522.5454943,2017
 "Papua New Guinea","ausgov",523205989.3341,2018
 "Papua New Guinea","asdb",161518305.34,2018
 "Papua New Guinea","theglobalfund",37674224,2016
@@ -229,6 +339,11 @@
 "Papua New Guinea","who",16053153.17,2017
 "Papua New Guinea","undp",14248725,2017
 "Papua New Guinea","cerf",9186710,2018
+"Papua New Guinea","unitedstates",8664229.44,2016
+"Papua New Guinea","wfp",7607487,2016
+"Papua New Guinea","fao",6855819.53,2016
+"Papua New Guinea","gavi",3642511,2017
+"Papua New Guinea","ofid",3366144.18,2017
 "Rwanda","worldbank",279224930,2017
 "Rwanda","ec-devco",149531859.57954,2017
 "Rwanda","unitedstates",134309211.48,2018
@@ -239,6 +354,11 @@
 "Rwanda","unhcr",44645007.07,2016
 "Rwanda","bmz",37838590.34219,2016
 "Rwanda","be-dgd",36279742.09922,2018
+"Rwanda","the_power_of_nutrition",3.5e+07,2018
+"Rwanda","wfp",31352786,2017
+"Rwanda","sida",30443850.51127,2018
+"Rwanda","gavi",15998748,2017
+"Rwanda","wvi",13749387,2017
 "Sao Tome and Principe","ec-devco",7725956.521368,2017
 "Sao Tome and Principe","worldbank",7412430,2018
 "Sao Tome and Principe","undp",6788984,2017
@@ -249,6 +369,11 @@
 "Sao Tome and Principe","ofid",1254496.52,2016
 "Sao Tome and Principe","ifad",1161766.187205,2016
 "Sao Tome and Principe","fao",985030.56,2017
+"Sao Tome and Principe","unfpa",623686,2018
+"Sao Tome and Principe","imf",586489,2018
+"Sao Tome and Principe","wfp",189793,2017
+"Sao Tome and Principe","afd",117230.17,2018
+"Sao Tome and Principe","unitedstates",106130.3,2016
 "Sierra Leone","dfid",197220015.8544,2016
 "Sierra Leone","unitedstates",101119752.22,2016
 "Sierra Leone","ec-devco",86314713.762662,2016
@@ -259,6 +384,11 @@
 "Sierra Leone","ifrcrcs",21789349.03304,2016
 "Sierra Leone","bmz",19661842.522432,2016
 "Sierra Leone","wvi",19374688.25,2017
+"Sierra Leone","wfp",19099831,2016
+"Sierra Leone","irc_uk",15046157.491904,2016
+"Sierra Leone","fao",14239830.96,2016
+"Sierra Leone","ifad",13978696.43,2018
+"Sierra Leone","ofid",13919601.13,2018
 "Somalia","ec-devco",538317070.673196,2017
 "Somalia","dfid",337115360.064,2017
 "Somalia","wfp",333799006,2017
@@ -269,6 +399,11 @@
 "Somalia","icrc",94334495.89167,2017
 "Somalia","wvi",87466305,2017
 "Somalia","bmz",84714324.6998,2018
+"Somalia","unhcr",77088273.5,2017
+"Somalia","norad",66104196.3114,2017
+"Somalia","undp",58167534,2017
+"Somalia","nrc",52017274.85916,2017
+"Somalia","unocha-cbpf",51537681.75,2018
 "Syrian Arab Republic","unitedstates",616628929.75,2017
 "Syrian Arab Republic","wfp",505784126,2016
 "Syrian Arab Republic","dfid",310820857.9168,2016
@@ -279,6 +414,11 @@
 "Syrian Arab Republic","ifrcrcs",110357103.44832,2016
 "Syrian Arab Republic","pin",81262751.46622,2018
 "Syrian Arab Republic","sida",74389681.818162,2018
+"Syrian Arab Republic","gac-amc",67880468.1684521,2018
+"Syrian Arab Republic","who",66039255.92,2017
+"Syrian Arab Republic","danida",56327107.91883,2018
+"Syrian Arab Republic","undp",50386751,2017
+"Syrian Arab Republic","minbuza_nl",48923582.818,2018
 "Tanzania","wwf-uk",1202085634.904,2016
 "Tanzania","unitedstates",619832714.03,2018
 "Tanzania","worldbank",438152313,2017
@@ -289,6 +429,11 @@
 "Tanzania","afdb",103306157.603169,2017
 "Tanzania","gac-amc",86385593.1305344,2017
 "Tanzania","unhcr",69990191.42,2016
+"Tanzania","bmgf",62283360.8834871,2016
+"Tanzania","danida",54257528.84343,2018
+"Tanzania","wfp",47831421,2018
+"Tanzania","gavi",46968151,2018
+"Tanzania","norad",45211109.6892,2017
 "Viet Nam","worldbank",1049629832,2017
 "Viet Nam","asdb",497055576.52,2016
 "Viet Nam","unitedstates",82791755.89,2017
@@ -299,6 +444,11 @@
 "Viet Nam","afd",50670074.47865,2016
 "Viet Nam","theglobalfund",42626425,2017
 "Viet Nam","who",17018784.38,2017
+"Viet Nam","be-dgd",16271138.426,2018
+"Viet Nam","undp",15917208,2018
+"Viet Nam","unpf",13380736.6729,2016
+"Viet Nam","finland_mfa",12620380.7172,2017
+"Viet Nam","gac-amc",12041127.50672,2016
 "Yemen","wfp",848620650,2018
 "Yemen","worldbank",547890574,2017
 "Yemen","unitedstates",430742309.63,2017
@@ -309,3 +459,8 @@
 "Yemen","who",134659388.95,2017
 "Yemen","unpf",97553660.7521,2016
 "Yemen","icrc",79104507.883245,2017
+"Yemen","bmz",76497909.021402,2016
+"Yemen","unhcr",76233904.1,2016
+"Yemen","cerf",49909290,2018
+"Yemen","minbuza_nl",48742019.264,2018
+"Yemen","sida",43257877.413115,2018
