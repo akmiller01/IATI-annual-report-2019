@@ -59,7 +59,6 @@
 "Burundi","ifad",17769150.735301,2017
 "Burundi","ofid",16353979.54,2016
 "Burundi","cerf",12985955,2016
-"Colombia","wwf-uk",1736324130.5872,2016
 "Colombia","worldbank",1532502377,2016
 "Colombia","iadb",1084527003,2016
 "Colombia","unitedstates",263953698.65,2017
@@ -74,6 +73,7 @@
 "Colombia","fco",25534111.6687978,2018
 "Colombia","fao",22660107.58,2018
 "Colombia","unpf",21031127.9622,2016
+"Colombia","sdc_ch",18203885.1576,2018
 "Congo","afd",41747345.865636,2017
 "Congo","worldbank",35485884,2018
 "Congo","ec-devco",21324064.11242,2018
@@ -419,7 +419,6 @@
 "Syrian Arab Republic","danida",56327107.91883,2018
 "Syrian Arab Republic","undp",50386751,2017
 "Syrian Arab Republic","minbuza_nl",48923582.818,2018
-"Tanzania","wwf-uk",1202085634.904,2016
 "Tanzania","unitedstates",619832714.03,2018
 "Tanzania","worldbank",438152313,2017
 "Tanzania","theglobalfund",297947705,2016
@@ -434,6 +433,7 @@
 "Tanzania","wfp",47831421,2018
 "Tanzania","gavi",46968151,2018
 "Tanzania","norad",45211109.6892,2017
+"Tanzania","bmz",34439710.49299,2016
 "Viet Nam","worldbank",1049629832,2017
 "Viet Nam","asdb",497055576.52,2016
 "Viet Nam","unitedstates",82791755.89,2017
