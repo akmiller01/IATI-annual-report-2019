@@ -209,10 +209,11 @@ trans.recip.max <- subset(trans.recip.max,!(publisher %in% exclude))
 
 crs <- fread("crs.csv")
 
-crs <- subset(crs,recipient_name %in% iati_members)
-crs$value <- crs$usd_disbursement*1000000
-setnames(crs,"recipient_name","recipient")
-setnames(crs,"donor_name","donor")
+crs <- subset(crs,Recipient %in% iati_members)
+crs$value <- crs$Value*1000000
+setnames(crs,"Recipient","recipient")
+setnames(crs,"Donor","donor")
+setnames(crs,"Year","year")
 keep <- c("recipient","donor","year","value")
 crs <- crs[,keep,with=F]
 
@@ -227,15 +228,19 @@ vague_donors <- c(
   ,"DAC EU Members + EC, Total"
   ,"Other Multilateral, Total"
   ,"Regional Development Banks, Total"
+  ,"Official Donors, Total"
+  ,"Private Donors, Total"
   #Duplicates
   ,"International Development Association [IDA]"
   ,"World Bank, Total"
   ,"AsDB Special Funds"
   ,"African Development Fund [AfDF]"
   ,"African Development Bank [AfDB]"
-  # ,"IMF (Concessional Trust Funds)"
+  ,"IMF (Concessional Trust Funds)"
   ,"United Nations, Total"
   ,"IDB Special Fund"
+  ,"Asian Development Bank [AsDB]"
+  ,"IDB Invest"
   )
 
 crs <- subset(crs,!donor %in% vague_donors)
@@ -270,13 +275,13 @@ publisher.dict <- c(
   ,"iadb"="Inter-American Development Bank, Total"         
   ,"norad"="Norway"        
   ,"sida"="Sweden"         
-  ,"cerf"="CERF"         
-  ,"fao"="FAO"          
+  ,"cerf"="Central Emergency Response Fund [CERF]"         
+  # ,"fao"="FAO"          
   ,"unfpa"="UNFPA"        
   ,"ec-near"="EU Institutions"      
   ,"afd"="France"          
-  ,"ebrd"="EBRD"         
-  ,"idlo"="IDLO"         
+  ,"ebrd"="European Bank for Reconstruction and Development [EBRD]"         
+  # ,"idlo"="IDLO"         
   ,"mfat"="New Zealand"
   ,"gavi"="Global Alliance for Vaccines and Immunization [GAVI]"
   ,"jica"="Japan"
