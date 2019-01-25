@@ -20,6 +20,7 @@
 "Benin","African Development Fund",2017,69086990
 "Benin","Global Fund",2017,50508900
 "Benin","France",2017,46407682.89
+"Benin","IMF (Concessional Trust Funds)",2017,44138700
 "Benin","Germany",2017,37269709.59
 "Benin","Netherlands",2017,31732023.71
 "Benin","Islamic Development Bank",2017,27897800
@@ -28,7 +29,6 @@
 "Benin","Japan",2017,20348773.052
 "Benin","Canada",2017,14516699.258
 "Benin","UNICEF",2017,8122000
-"Benin","Global Alliance for Vaccines and Immunization",2017,7815080
 "Burkina Faso","International Development Association",2017,207271204.04
 "Burkina Faso","EU Institutions",2017,187541621.1
 "Burkina Faso","France",2017,108867768.199
@@ -123,6 +123,7 @@
 "Ghana","United States",2017,233278360
 "Ghana","African Development Fund",2017,135712390
 "Ghana","Global Fund",2017,93530126
+"Ghana","IMF (Concessional Trust Funds)",2017,92093100
 "Ghana","African Development Bank",2017,78597570
 "Ghana","United Kingdom",2017,72842801.234
 "Ghana","Germany",2017,57916534.44
@@ -133,7 +134,6 @@
 "Ghana","France",2017,40626481.627
 "Ghana","MasterCard Foundation",2017,29169254
 "Ghana","Denmark",2017,23459135.36021
-"Ghana","Netherlands",2017,19739742.55
 "Guinea","EU Institutions",2017,82175279.97
 "Guinea","United States",2017,75099200
 "Guinea","International Development Association",2017,61442463.5
@@ -142,13 +142,13 @@
 "Guinea","Japan",2017,30075440.474
 "Guinea","Global Fund",2017,29226509
 "Guinea","Islamic Development Bank",2017,27892800
+"Guinea","IMF (Concessional Trust Funds)",2017,23862100
 "Guinea","Global Alliance for Vaccines and Immunization",2017,13313420
 "Guinea","Germany",2017,12177720.47
 "Guinea","UNICEF",2017,10500000
 "Guinea","Kuwait",2017,6403430
 "Guinea","IFAD",2017,6204884
 "Guinea","UNDP",2017,5762030.74
-"Guinea","Spain",2017,5693145.447
 "Honduras","Inter-American Development Bank",2017,175860818
 "Honduras","United States",2017,120457150
 "Honduras","EU Institutions",2017,67994585.83
@@ -204,12 +204,13 @@
 "Liberia","Sweden",2017,25057208.23
 "Liberia","Global Fund",2017,24942480
 "Liberia","Norway",2017,22956666.91
+"Liberia","IMF (Concessional Trust Funds)",2017,20470700
 "Liberia","Global Alliance for Vaccines and Immunization",2017,8493500
 "Liberia","UNDP",2017,6996901.96
 "Liberia","UNICEF",2017,5304000
 "Liberia","Ireland",2017,4425732.638
-"Liberia","United Kingdom",2017,4042633.4
 "Madagascar","International Development Association",2017,204569015.65
+"Madagascar","IMF (Concessional Trust Funds)",2017,129510000
 "Madagascar","United States",2017,89400830
 "Madagascar","EU Institutions",2017,76107741.387
 "Madagascar","African Development Fund",2017,60060270
@@ -223,7 +224,6 @@
 "Madagascar","UNICEF",2017,13043000
 "Madagascar","IFAD",2017,13013683
 "Madagascar","Central Emergency Response Fund",2017,10960425
-"Madagascar","Norway",2017,10061464.862
 "Malawi","United States",2017,449924620
 "Malawi","International Development Association",2017,328328079.75
 "Malawi","Global Fund",2017,172055357
@@ -233,12 +233,12 @@
 "Malawi","Norway",2017,58857859.657
 "Malawi","African Development Fund",2017,55479620
 "Malawi","Japan",2017,41104528.804
+"Malawi","IMF (Concessional Trust Funds)",2017,27037300
 "Malawi","Ireland",2017,22762504.694
 "Malawi","OPEC Fund for International Development",2017,16696800
 "Malawi","Bill & Melinda Gates Foundation",2017,16664088.89
 "Malawi","UNICEF",2017,11832000
 "Malawi","Global Alliance for Vaccines and Immunization",2017,10069510
-"Malawi","IFAD",2017,9051877
 "Mali","United States",2017,218890710
 "Mali","EU Institutions",2017,210438745.06
 "Mali","International Development Association",2017,193659318.11
@@ -247,13 +247,13 @@
 "Mali","African Development Fund",2017,86320460
 "Mali","Germany",2017,74146997.86
 "Mali","Global Fund",2017,44216380
+"Mali","IMF (Concessional Trust Funds)",2017,43883500
 "Mali","Sweden",2017,39389300.45
 "Mali","Netherlands",2017,37684759.8
 "Mali","Islamic Development Bank",2017,35774870
 "Mali","Denmark",2017,34107803.823
 "Mali","Switzerland",2017,32792243.70255
 "Mali","OPEC Fund for International Development",2017,27369050
-"Mali","Norway",2017,21704895.7
 "Moldova","EU Institutions",2017,149736758.761
 "Moldova","United States",2017,30453030
 "Moldova","Romania",2017,24211595.708
@@ -261,6 +261,7 @@
 "Moldova","International Development Association",2017,20701837.5
 "Moldova","International Bank for Reconstruction and Development",2017,19076669
 "Moldova","Switzerland",2017,15994327.364
+"Moldova","IMF (Concessional Trust Funds)",2017,14419900
 "Moldova","Sweden",2017,14216905.4
 "Moldova","Germany",2017,12955597.18
 "Moldova","Global Fund",2017,10818314
@@ -268,7 +269,6 @@
 "Moldova","Japan",2017,5526112.81
 "Moldova","Turkey",2017,5280000
 "Moldova","Czech Republic",2017,4732597.757
-"Moldova","France",2017,3675964.38
 "Montenegro","EU Institutions",2017,123031201.191
 "Montenegro","European Bank for Reconstruction and Development",2017,50333612.092
 "Montenegro","United Arab Emirates",2017,14613000
@@ -349,6 +349,7 @@
 "Rwanda","EU Institutions",2017,149276854.534
 "Rwanda","Global Fund",2017,84690590
 "Rwanda","United Kingdom",2017,76576526.77
+"Rwanda","IMF (Concessional Trust Funds)",2017,74966000
 "Rwanda","Netherlands",2017,48068880.21
 "Rwanda","African Development Fund",2017,47309210
 "Rwanda","Germany",2017,45239388.33
@@ -358,7 +359,6 @@
 "Rwanda","IFAD",2017,20957653.4
 "Rwanda","MasterCard Foundation",2017,17560150
 "Rwanda","Korea",2017,16522216
-"Rwanda","UNHCR",2017,16481200
 "Sao Tome and Principe","Portugal",2017,12231423.323
 "Sao Tome and Principe","EU Institutions",2017,7712763.8
 "Sao Tome and Principe","African Development Fund",2017,4026290
@@ -367,16 +367,17 @@
 "Sao Tome and Principe","OPEC Fund for International Development",2017,2111190
 "Sao Tome and Principe","Global Environment Facility",2017,1841649
 "Sao Tome and Principe","International Development Association",2017,1792340.77
+"Sao Tome and Principe","IMF (Concessional Trust Funds)",2017,1758910
 "Sao Tome and Principe","IFAD",2017,1664502.3
 "Sao Tome and Principe","Global Alliance for Vaccines and Immunization",2017,1580940
 "Sao Tome and Principe","UNICEF",2017,962000
 "Sao Tome and Principe","World Health Organisation",2017,784265.15
 "Sao Tome and Principe","UNDP",2017,640220.5
 "Sao Tome and Principe","France",2017,545949.48
-"Sao Tome and Principe","UNFPA",2017,375030.46
 "Sierra Leone","United Kingdom",2017,152572121.56
 "Sierra Leone","United States",2017,83066830
 "Sierra Leone","International Development Association",2017,67899537.1
+"Sierra Leone","IMF (Concessional Trust Funds)",2017,54304700
 "Sierra Leone","EU Institutions",2017,51441104.68
 "Sierra Leone","Global Fund",2017,41934960
 "Sierra Leone","Germany",2017,17221994.21
@@ -388,7 +389,6 @@
 "Sierra Leone","Global Alliance for Vaccines and Immunization",2017,7199930
 "Sierra Leone","Kuwait",2017,7073258.7
 "Sierra Leone","OPEC Fund for International Development",2017,5894330
-"Sierra Leone","UNDP",2017,5767282.52
 "Somalia","United Kingdom",2017,363443180.56028
 "Somalia","United States",2017,332398610
 "Somalia","EU Institutions",2017,260828975.69

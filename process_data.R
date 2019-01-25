@@ -233,7 +233,7 @@ vague_donors <- c(
   ,"AsDB Special Funds"
   ,"African Development Fund [AfDF]"
   ,"African Development Bank [AfDB]"
-  ,"IMF (Concessional Trust Funds)"
+  # ,"IMF (Concessional Trust Funds)"
   ,"United Nations, Total"
   ,"IDB Special Fund"
   )
