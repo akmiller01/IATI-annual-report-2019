@@ -295,6 +295,20 @@ publisher.dict <- c(
   ,"maec"="Spain"
   ,"sdc_ch"="Switzerland"
   ,"unicef"="UNICEF"
+  ,"cif"="Climate Investment Funds [CIF]"
+  ,"who"="World Health Organisation [WHO]"
+  ,"irishaid"="Ireland"
+  ,"ilo"="International Labour Organisation [ILO]"
+  ,"cprojects"="Charity Projects Ltd (Comic Relief)"
+  ,"slovakaid"="Slovak Republic"
+  ,"unaids"="UNAIDS"
+  ,"lithuania_mfa"="Lithuania"
+  ,"hewlett-foundation"="William & Flora Hewlett Foundation"
+  ,"unhcr"="UNHCR"
+  ,"iadb"="Inter-American Development Bank [IDB]"
+  ,"gggi"="Global Green Growth Institute [GGGI]"
+  ,"omidyarnetwork"="Omidyar Network Fund, Inc."
+  ,"af"="Adaptation Fund"
 )
 
 trans.recip.max$donor = publisher.dict[trans.recip.max$publisher]
